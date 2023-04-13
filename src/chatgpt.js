@@ -1,6 +1,6 @@
 import dotenv from 'dotenv'
 import { ChatGPTAPI } from 'chatgpt';
-import { viaChatGPT } from './constants.js';
+//import { viaChatGPT } from './constants.js';
 
 dotenv.config()
 
@@ -27,7 +27,8 @@ export async function getChatGPTReply(prompt) {
 
         console.log('🚀🚀🚀 /reply: ', reply)
 
-        return `${reply}\n\n${viaChatGPT}`;
+        //return `${reply}\n\n${viaChatGPT}`;
+        return `${reply}`;
     } catch (error) {
         return "发生了一些错误，请稍后再试：\n" + error;
     }
